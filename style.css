@@ -97,6 +97,16 @@ footer p {
   margin: 0.5rem 0;
 }
 
+#starfield {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .stars {
   position: fixed;
   top: 0;
@@ -122,8 +132,8 @@ body.dark-mode .stars {
 
 body:not(.dark-mode) .stars {
   opacity: 0.05;
-  background-image: radial-gradient(#999999 1px, transparent 1px),
-                    radial-gradient(#cccccc 1px, transparent 1px);
+  background-image: radial-gradient(#dd3c3c 1px, transparent 1px),
+                    radial-gradient(#3a2e2e 1px, transparent 1px);
 }
 
 @keyframes twinkle {
