@@ -162,8 +162,8 @@ body.dark-mode .nebula {
 }
 
 body:not(.dark-mode) .nebula {
-  opacity: 0.05;
-  filter: blur(4px) grayscale(80%);
+  opacity: 0.4;
+  filter: blur(4px) grayscale(10%);
 }
 
 @keyframes floatNebula {
