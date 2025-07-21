@@ -130,11 +130,25 @@ body.dark-mode .stars {
                     radial-gradient(#ffffff 1px, transparent 1px);
 }
 
-body:not(.dark-mode) .stars {
-  opacity: 0.05;
-  background-image: radial-gradient(#dd3c3c 1px, transparent 1px),
-                    radial-gradient(#3a2e2e 1px, transparent 1px);
+body.light-mode {
+  background: radial-gradient(ellipse at center, #d6d8dc 0%, #a8a9ac 100%);
+  color: #111;
 }
+
+body.light-mode .links a {
+  background: rgba(0, 0, 0, 0.05);
+  color: #111;
+}
+
+body.light-mode .links a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode footer {
+  background-color: #eee;
+  color: #333;
+}
+
 
 @keyframes twinkle {
   from { transform: translateY(0); }

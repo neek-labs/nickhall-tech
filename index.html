@@ -43,20 +43,24 @@
     <p style="margin-top: 1rem;"><span style="font-size: 0.8rem; color: #888;">&copy; 2025 Nick Hall. Navigating the digital frontier. 🚀</span></p>
   </div>
 </footer>
-<script>
-  const toggleButton = document.getElementById('themeToggle');
-  const body = document.body;
+ <script>
+    const toggleButton = document.getElementById('themeToggle');
+    const body = document.body;
 
-  // Check saved theme
-  if (localStorage.getItem('theme') === 'dark') {
-    body.classList.add('dark-mode');
-  }
+    // Apply saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      body.classList.add('light-mode');
+    } else {
+      body.classList.add('dark-mode');
+    }
 
-  toggleButton.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
-  });
-</script>
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      body.classList.toggle('light-mode');
+      const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
 </body>
 </html>
