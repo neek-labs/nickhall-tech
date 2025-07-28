@@ -220,3 +220,34 @@ body:not(.dark-mode) .nebula {
 .collapsible-content.open {
   max-height: 2000px; /* Enough for all content */
 }
+
+/* ✅ Updated Nav Style (Option A: Button-like Tiles) */
+.astro-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: rgba(20, 20, 30, 0.95);
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid #444;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.astro-nav a {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.95rem;
+}
+
+.astro-nav a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
